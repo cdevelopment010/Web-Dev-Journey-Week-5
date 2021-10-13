@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites | Timer</title>
+</head>
+<body>
+
+    <h3>Select time (minutes):</h3>
+
+        <select name="time" id="time">
+            <option value="1">1 minutes</option>
+            <option value="2">2 minutes</option>
+            <option value="3">3 minutes</option>
+            <option value="4">4 minutes</option>
+            <option value="5">5 minutes</option>
+        </select>
+
+        <button onclick="val()">Start</button>
+        <button onclick="stopCountDown()">Stop</button>
+
+    <h1 id="timerCountDown">Your timer: </h1>
+
+    <p id="timeRemaining"></p>
+    <p id="timeStart"></p>
+
+    <audio src="./Assets/beep-01a.mp3" id="beep"></audio>
+
+    <script src="./index.js"></script>
+</body>
+</html>
