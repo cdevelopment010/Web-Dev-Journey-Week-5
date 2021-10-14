@@ -50,8 +50,12 @@ main {
     border-radius: var(--border-radius);
     padding: 20px; 
     background-color: white;
-    display: grid; 
+    /* display: grid; 
     grid-template-columns: 1fr;
+    gap: 20px; */
+
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -200,7 +204,7 @@ main {
     main {
         margin-top: 10vh;
         width: 80%;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr) 0.8fr;
         grid-template-areas: "daniel daniel jonathan kira"
             "jeanette patrick patrick kira"
         ;
