@@ -59,6 +59,16 @@ main {
     gap: 20px;
 }
 
+@supports not ((display: flex) and (grid: 20px)) {
+    .card > * {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/***************************************/
+
 .label {
     display: flex; 
     align-items: center;
